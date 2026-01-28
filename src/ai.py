@@ -1,10 +1,6 @@
 from .constants import *
 
 class AI:
-    def __init__(self, level=1, player=2):
-        self.level = level
-        self.player = player
-
     def minimax(self, board, depth, is_maximizing, alpha, beta):
 
         winner = board.check_win()
