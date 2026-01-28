@@ -12,7 +12,7 @@ Zastosowany algorytm działa na zasadzie minimalizacji maksymalnych możliwych s
 
 ## Technologie
 - **Python 3.13**
-- **Pygame**
+- **Pygame 2.6.1**
 - **Minimax + Alpha-Beta Pruning**
 
 ## Struktura Projektu
