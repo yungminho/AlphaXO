@@ -122,7 +122,7 @@ class Game:
                             self.check_game_over()
                             self.next_turn()
 
-                if self.player == PLAYER_X and not self.game_over:
+                if self.state == 'playing' and self.player == PLAYER_X and not self.game_over:
                     self.show_lines()
                     self.draw_fig()
                     pygame.display.update()
