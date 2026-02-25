@@ -21,6 +21,8 @@ class Game:
 
         self.font = pygame.font.SysFont('monospace', 30, bold=True)
 
+        self.clock = pygame.time.Clock()
+
     def show_lines(self):
         self.screen.fill(BG_COLOR)
         pygame.draw.line(self.screen, LINE_COLOR, (SQ_SIZE, 0), (SQ_SIZE, HEIGHT), LINE_WIDTH)
@@ -81,6 +83,9 @@ class Game:
 
     def run(self):
         while self.running:
+
+            self.clock.tick(60)
+
             if self.state == 'menu':
                 self.draw_menu()
 
